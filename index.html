@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YourDestination.com | Your Travel Parterner</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<style>
+    section{
+        display: flex;
+        flex-direction: column;
+    }
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+
+    #container::before{
+        content: "";
+        position: absolute;
+        background: url(./img/background.jpg) no-repeat center center/cover;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+    }
+
+    #navbar{
+        display: flex;
+    }
+
+    #navbar ul{
+        padding-left: 100px;
+    }
+
+    #navbar ul li{
+        display: inline-block;
+        margin: 43px 13px;
+        font-weight: 500;
+    }
+
+    #navbar ul li a{
+        font-size: 15px;
+        color: white;
+        text-decoration: none;
+        padding: 10px 15px;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    #navbar ul li.homepage a{
+        font-size: 24px;
+        font-weight:700;
+        margin: 0px;
+        font-family:'Playfair Display',sans-serif;
+    }
+
+    .primaryheading h1{
+        font-family: 'Playfair Display', serif;
+        font-size: 60px;
+        font-weight:700;
+        width: 500px;
+        color:white;
+        padding: 50px 118px;
+    }
+
+    #aboutbody{
+        margin: 290px 100px;
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 0px;
+    }
+
+    #aboutbody #imgs{
+        margin: 0px 15px;
+        display: flex;
+        flex-direction: row;
+    }
+    #aboutbody #imgs #img1,#aboutbody #imgs #img2{
+        width: 250px;
+        height: 300px;
+        margin: 0px 15px;
+    }
+
+    #aboutbody #imgs #img2{
+        margin-top: 60px;
+    }
+    #aboutus{
+        width: 450px;
+    }
+    .heading{
+        font-family: 'Open Sans', sans-serif;
+        font-size: 18px;
+        color: #fc9842;
+    }
+    .sec-head{
+        font-size: 47px;
+    }
+
+    .parabody.one,#aboutus .parabody.two{
+        margin: 10px 0px;
+    }
+    .parabody{
+        font-size: 14px;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 700;
+    }
+
+    #services{
+        margin: 250px 120px;
+        width: 450px;
+        margin-bottom: 70px;
+    }
+    #plans{
+        display: flex;
+        flex-direction: row;
+    }
+    .plan img{
+        width: 350px;
+        height: 370px;
+        margin: 20px;
+    }
+
+    .plantext{
+        font-family: 'Playfair Display', serif;
+        font-size: 25px;
+        margin: 0px 20px;
+    }
+    #footer{
+        color: white;
+        font-family: "Open Sans",sans-serif;
+        text-align: left;
+        background-color: #fc8621;
+        padding: 3rem 0px;
+        padding-left: 120px;
+        margin-bottom: 50px;
+    }
+    footer{
+        text-align: center;
+        font-size: 10px;
+    }
+</style>
+
+<body>
+    <section id=container>
+        <nav id="navbar">
+            
+            <ul>
+                <li class="itmes homepage"><a href="index.html">YourDestination</a></li>
+                <li class="items"><a href="#">Home</a></li>
+                <li class="items"><a href="#">About Us</a></li>
+                <li class="items"><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+    </section>
+    <section class="primaryheading">
+        <h1>It is Better to Travel Well  Than to Arrive</h1>
+    </section>
+    <section id="aboutbody">
+        <section id="aboutus">
+            <h1 class="heading">ABOUT US</h1>
+            <h1 class="sec-head">Explore All Corners of The World With Us</h1>
+            <h1 class="parabody one">Far far away, behind the word mountains, far     from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
+            </h1>
+            <h1 class="parabody two">A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.
+            </h1>
+        </section>
+        <section id="imgs">
+            <img src="./img/1.jpg" alt="lakeview" id="img1">
+            <img src="./img/2.jpg" alt="view2" id="img2">
+        </section>
+    </section>
+    <section id="services">
+        <section>
+            <h1 class="heading">WHAT WE SERVE</h1>
+            <h1 class="sec-head">We Provide Top Destinations</h1>
+            <h1 class="parabody">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</h1>
+        </section>
+        <section id="plans">
+            <div class="plan">
+                <img src="./img/plan1.jpg" >
+                <h1 class="plantext">Enjoy the Beauty of Venice in $450</h1>
+            </div>
+
+            <div class="plan">
+                <img src="./img/plan2.jpg" >
+                <h1 class="plantext">Enjoy the Beauty of Venice in $550</h1>
+            </div>
+
+            <div class="plan">
+                <img src="./img/plan3.jpg">
+                <h1 class="plantext">Enjoy the Beauty of Venice in $650</h1>
+            </div>
+        </section>
+    </section>
+    <section id="footer">
+        <h1>Begin your adventurous journey here.</h1>
+    </section>
+    <footer>
+        <h1>All Right Reserved to passport.com &copy;</h1>
+    </footer>
+</body>
+</html>
